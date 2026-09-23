@@ -1,0 +1,622 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Matchea - Pure Matcha, Pure Happiness</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="#" class="logo">
+                <img
+                    src="images/logo-matchea.jpeg"
+                    alt="Matchea Logo"
+                >
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button
+                class="cart-button"
+                onclick="openCart()"
+            >
+                🛒
+                <span id="cart-count">0</span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="small-title">
+                        🍃 PREMIUM MATCHA
+                    </span>
+
+                    <h1>
+                        A Little Matcha,
+                        <span>A Lot of Happiness.</span>
+                    </h1>
+
+                    <p>
+                        Nikmati kelembutan matcha premium
+                        dalam setiap tegukan. Fresh, creamy,
+                        dan dibuat dengan penuh cinta.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#menu"
+                            class="btn btn-primary"
+                        >
+                            Explore Menu
+                        </a>
+
+                        <a
+                            href="#about"
+                            class="btn btn-outline"
+                        >
+                            Our Story
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="circle-decoration"></div>
+
+                    <img
+                        src="images/Iced matcha ✨.jpg"
+                        alt="Matcha Latte"
+                    >
+
+                    <div class="floating-card">
+
+                        <span>★★★★★</span>
+
+                        <strong>
+                            Matcha Lovers
+                        </strong>
+
+                        <small>
+                            made happy
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENU ================= -->
+
+        <section class="menu-section" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="small-title">
+                        OUR FAVORITES
+                    </span>
+
+                    <h2>
+                        Find Your Perfect Matcha
+                    </h2>
+
+                    <p>
+                        Tiga rasa favorit Matchea untuk
+                        menemani harimu.
+                    </p>
+
+                </div>
+
+
+                <div class="menu-grid">
+
+                    <!-- MATCHA LATTE -->
+
+                    <article class="menu-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/Iced matcha ✨.jpg"
+                                alt="Matcha Latte"
+                            >
+
+                            <span class="badge">
+                                BEST SELLER
+                            </span>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Matcha Latte
+                            </h3>
+
+                            <p>
+                                Premium matcha yang dipadukan
+                                dengan fresh milk yang creamy.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    Rp 14. 000
+                                </strong>
+
+                                <button
+                                    onclick="addToCart(
+                                        'Matcha Latte',
+                                        14000,
+                                        'images/Iced matcha ✨.jpg'
+                                    )"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- MATCHA STRAWBERRY -->
+
+                    <article class="menu-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/Easy 5-minute Strawberry Matcha Latte - Christie at Home.jpg"
+                                alt="Matcha Strawberry"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Matcha Strawberry
+                            </h3>
+
+                            <p>
+                                Perpaduan matcha creamy dengan
+                                strawberry yang fresh dan manis.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    Rp 17.000
+                                </strong>
+
+                                <button
+                                    onclick="addToCart(
+                                        'Matcha Strawberry',
+                                        17000,
+                                        'images/matcha-strawberry.jpg'
+                                    )"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- MATCHA CHOCOLATE -->
+
+                    <article class="menu-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="images/download (2).jpg"
+                                alt="Matcha Chocolate"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Matcha Chocolate
+                            </h3>
+
+                            <p>
+                                Matcha earthy berpadu dengan
+                                chocolate yang rich dan creamy.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    Rp 17.000
+                                </strong>
+
+                                <button
+                                    onclick="addToCart(
+                                        'Matcha Chocolate',
+                                        17000,
+                                        'images/download (2).jpg'
+                                    )"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY MATCHEA ================= -->
+
+        <section class="why-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="small-title">
+                        WHY MATCHEA?
+                    </span>
+
+                    <h2>
+                        Made With Love,
+                        Served With Matcha.
+                    </h2>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+
+                        <div class="why-icon">
+                            🍃
+                        </div>
+
+                        <h3>
+                            Premium Matcha
+                        </h3>
+
+                        <p>
+                            Menggunakan matcha berkualitas
+                            dengan aroma dan rasa earthy
+                            yang khas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <div class="why-icon">
+                            🥛
+                        </div>
+
+                        <h3>
+                            Fresh & Creamy
+                        </h3>
+
+                        <p>
+                            Dipadukan dengan bahan pilihan
+                            untuk menghasilkan rasa lembut
+                            dan creamy.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <div class="why-icon">
+                            ✨
+                        </div>
+
+                        <h3>
+                            Made With Love
+                        </h3>
+
+                        <p>
+                            Setiap minuman dibuat dengan
+                            perhatian terhadap rasa dan kualitas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="container about-content">
+
+                <div class="about-image">
+
+                    <img
+                        src="images/logo-matchea.jpeg"
+                        alt="Matchea"
+                    >
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <span class="small-title">
+                        OUR STORY
+                    </span>
+
+                    <h2>
+                        Made for
+                        <span>Matcha Lovers.</span>
+                    </h2>
+
+                    <p>
+                        Matchea hadir untuk menghadirkan
+                        pengalaman menikmati matcha yang
+                        sederhana, creamy, dan menyenangkan.
+                    </p>
+
+                    <p>
+                        Kami percaya bahwa secangkir matcha
+                        bukan hanya tentang rasa, tetapi juga
+                        tentang menciptakan momen kecil yang
+                        membuat hari menjadi lebih baik.
+                    </p>
+
+                    <a
+                        href="#menu"
+                        class="text-link"
+                    >
+                        Discover Our Menu →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROMO ================= -->
+
+        <section class="promo-section">
+
+            <div class="container promo-content">
+
+                <span>
+                    YOUR DAILY MATCHA
+                </span>
+
+                <h2>
+                    Good Days Start With Matcha.
+                </h2>
+
+                <p>
+                    Temukan minuman matcha favoritmu
+                    dan buat harimu sedikit lebih bahagia.
+                </p>
+
+                <a
+                    href="#menu"
+                    class="btn btn-light"
+                >
+                    Order Your Matcha
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <h2>
+                    MATCHEA
+                </h2>
+
+                <p>
+                    Pure Matcha, Pure Happiness.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <p>
+                    Follow our journey
+                </p>
+
+                <div>
+                    Instagram · TikTok
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Matchea. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART ================= -->
+
+    <div
+        class="cart-overlay"
+        id="cart-overlay"
+        onclick="closeCart()"
+    ></div>
+
+
+    <aside
+        class="cart-sidebar"
+        id="cart-sidebar"
+    >
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button onclick="closeCart()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cart-items"
+        >
+
+            <p class="empty-cart">
+                Keranjang masih kosong 🍵
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cart-total">
+                    Rp 0
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-button"
+                onclick="checkout()"
+            >
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
